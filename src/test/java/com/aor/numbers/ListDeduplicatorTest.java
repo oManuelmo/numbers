@@ -19,7 +19,7 @@ public class ListDeduplicatorTest {
         List<Integer> expected = helper2();
 
         ListDeduplicator deduplicator = new ListDeduplicator();
-        List<Integer> distinct = deduplicator.deduplicate(list);
+        List<Integer> distinct = deduplicator.deduplicate(list, new ListSorter());
 
         Assertions.assertEquals(expected, distinct);
     }
